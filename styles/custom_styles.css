@@ -1,0 +1,12 @@
+.default-content-wrapper ul {
+    align-items: center;
+}
+
+header .nav-wrapper {
+    background-color: black;
+    color: white;
+}
+
+.icon-brand img {
+    fill: white;
+}
