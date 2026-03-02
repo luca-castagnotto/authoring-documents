@@ -271,3 +271,42 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+/* custom */
+header .nav-wrapper {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+header nav {
+    padding: 0;
+}
+
+header nav .nav-sections .default-content-wrapper > ul > li {
+    padding: 5px 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-family: "Body-Font";
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.27em;
+    text-transform: uppercase;
+}
+
+header nav .nav-sections .default-content-wrapper > ul > li:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
