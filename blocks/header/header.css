@@ -18,10 +18,9 @@ header nav {
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 24px;
-  margin: auto;
   max-width: 1248px;
   height: var(--nav-height);
-  padding: 0;
+  padding: 0 24px;
   font-family: var(--body-font-family);
 }
 
@@ -44,7 +43,7 @@ header nav[aria-expanded='true'] {
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1264px;
-    padding: 0 32px;
+    padding: 0 24px;
   }
 
   header nav[aria-expanded='true'] {
@@ -288,7 +287,7 @@ header nav .nav-sections .default-content-wrapper > ul > li {
     text-transform: uppercase;
 }
 
-header nav .nav-sections .default-content-wrapper > ul > li::after {
+header nav .nav-sections .default-content-wrapper > ul > li:nth-of-type(2)::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -297,5 +296,14 @@ header nav .nav-sections .default-content-wrapper > ul > li::after {
     height: 2px;
     background: #fff;
     transform: translateX(-50%);
+}
+
+@font-face {
+    font-family: Body-Font;
+    src: url("https://static.apps.ferrarinetwork.ferrari.com/autoloader/v1/static/fonts/Ferrari-SansRegular.32fade35.woff2") format("woff2"), url("https://static.apps.ferrarinetwork.ferrari.com/autoloader/v1/static/fonts/Ferrari-SansRegular.12656555.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    font-stretch: normal;
 }
 
